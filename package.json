@@ -22,7 +22,7 @@
     "@angular/platform-server": "^7.2.6",
     "@angular/pwa": "^0.13.3",
     "@angular/router": "~7.1.0",
-    "@angular/service-worker": "^7.1.4",
+    "@angular/service-worker": "^7.2.6",
     "core-js": "^2.5.4",
     "ng-pwa-tools": "0.0.15",
     "rxjs": "~6.3.3",

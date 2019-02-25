@@ -11,8 +11,9 @@
           "/*.css",
           "/*.js"
         ]
-      }
-    }, {
+    }
+  },
+    {
       "name": "assets",
       "installMode": "lazy",
       "updateMode": "prefetch",

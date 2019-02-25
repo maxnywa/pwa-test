@@ -24,17 +24,18 @@
 // // Create an HTTP service.
 // http.createServer(app).listen(3000);
 // // Create an HTTPS service identical to the HTTP service.
-// // https.createServer(options, app).listen(443, ()=> console.log('running HTTPS'));
+// https.createServer(options, app).listen(443, ()=> console.log('running HTTPS'));
+
 const http = require('http');
 const path = require('path');
 const express = require('express');
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, 'dist/routingapp')));
+app.use(express.static(path.join(__dirname, 'dist/pwa')));
 
 app.get('*', (req, res)=>{
-  res.sendFile(path.join(__dirname, 'dist/routingapp/index.html'));
+  res.sendFile(path.join(__dirname, 'dist/pwa/index.html'));
 });
 
 const port = process.env.PORT|| '3000';
